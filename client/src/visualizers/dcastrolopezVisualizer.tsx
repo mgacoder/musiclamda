@@ -13,16 +13,17 @@ export const dcastrolopezVisualizer = new Visualizer(
     const height = window.innerHeight / 2;
     const dim = Math.min(width, height); 
     
-    // p5.background(147,112,219, 255); // Magenta Background
-    p5.background(170, 51, 106,255); // Orange Background
+
+    // p5.background(147,112,219, 255); // Purple Background
+    p5.background(170, 51, 106,255); // Pink Background
     // p5.strokeWeight(dim * 0.01);    // Normal Small Stroke
     p5.strokeWeight(dim * 0.025);       // Testing Stroke Size
-    p5.stroke(255, 253, 208, 255);     // Cream Stroke Color 
-    // p5.stroke(147,112,219, 255);  
-    p5.fill(208, 78, 47, 255);        
+    p5.stroke(255, 253, 208, 255);     // Pink Stroke Color 
+    // p5.stroke(147,112,219, 255);     // Purple Stroke Color 
+    p5.fill(208, 78, 47, 255);        // Turquoise Fill 
     // p5.noFill();
     
-    p5.translate(width/2, height/2);   // translates image to center of screen 
+    p5.translate(width/200, height/10);   // translates image to center of screen 
 
     const values = analyzer.getValue(); 
    
