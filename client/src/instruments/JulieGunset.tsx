@@ -190,4 +190,4 @@ function Theremin({ synth, setSynth }: InstrumentProps): JSX.Element {
   );
 }
 
-export const ThereminInstrument = new Instrument('Theremin', Theremin);
+export const ThereminInstrument = new Instrument('Theremin-JulieGunset', Theremin);
