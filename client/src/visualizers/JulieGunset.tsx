@@ -21,6 +21,11 @@ export const ChaosVisualizer = new Visualizer(
     p5.noFill();
 
     const values = analyzer.getValue();
+    // var num : number = values[ 0 ] as number;
+    // var color = Math.ceil( Number( String( num * 1000000000 ).slice( 0, 3 ) ) / 4 );
+    // var color1 = Math.ceil( Number( String( num * 1000000000 ).slice( 3, 6 ) ) / 4 );
+    // var color2 = Math.ceil( Number( String( num * 1000000000 ).slice( 6, 9 ) ) / 4 );
+    // p5.stroke(color, color1, color2, 255);
     p5.beginShape();
     
     for (let i = 0; i < values.length; i++) {
@@ -31,8 +36,11 @@ export const ChaosVisualizer = new Visualizer(
       //this isnt working
       //setTimeout(() => {console.log("Don't give anyone a seizure."); }, 1000);
       p5.vertex(x, y);
-      p5.vertex(x * x, y * y);
-      p5.vertex( 1 / x, 1 / y);
+      p5.vertex(y, x);
+      p5.vertex(-x, -y);
+      p5.vertex(-y, -x);
+      //p5.vertex(x * x, y * y);
+      //p5.vertex( 1 / x, 1 / y);
       //p5.stroke((x * 123456789007) % 255, (x * y * 255) % 255, (x / y * 255) % 255, 255)
     }
     p5.endShape();
