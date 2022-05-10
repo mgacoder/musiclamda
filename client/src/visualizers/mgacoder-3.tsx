@@ -7,7 +7,7 @@ import { Visualizer } from '../Visualizers';
 
 export const ShapeVisualizer = new Visualizer(
 
-  'Shapes',
+  'Rectangle-mgacoder',
 
   (p5: P5, analyzer: Tone.Analyser) => {
     
