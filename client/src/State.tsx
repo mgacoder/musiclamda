@@ -1,3 +1,4 @@
+
 // 3rd party
 import { List, Map } from 'immutable';
 
@@ -48,3 +49,4 @@ export const defaultState: AppState = Map<string, any>({
   'instruments': instruments,
   'visualizers': visualizers,
 });
+=======
