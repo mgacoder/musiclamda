@@ -44,10 +44,11 @@ export function PianoKey({
       })}
       style={{
         // CSS
-        top: 1,
-        left: `${index * 2}rem`,
+        top: 45,//this is the top margin of the keys
+        left: `${index * 3.41}rem`, //left margin of keys
         zIndex: minor ? 1 : 0,
-        width: minor ? '4rem' : '6rem',
+        width: minor ? '3rem' : '2rem',
+        opacity:0,
         marginLeft: minor ? '1rem' : 0,
       }}
     ></div>
@@ -80,6 +81,7 @@ function PianoKeyWithoutJSX({
         zIndex:0,
         width: '1.5rem',
         marginLeft: '0rem',
+        opacity: 1
       },
     },
     [],
@@ -102,18 +104,18 @@ function SaxophoneType({ title, onClick, active }: any): JSX.Element {
 //change this
 function Saxophone({ synth, setSynth }: InstrumentProps): JSX.Element {
   const keys = List([
-    { note: 'C', idx: 0 },
-    { note: 'Db', idx: 0.5 },
-    { note: 'D', idx: 1 },
-    { note: 'Eb', idx: 1.5 },
-    { note: 'E', idx: 2 },
+    //{ note: 'C', idx: 0 },
+    //{ note: 'Db', idx: 0.5 },
+    //{ note: 'D', idx: 1 },
+    //{ note: 'Eb', idx: 1.5 },
+    //{ note: 'E', idx: 2 },
     { note: 'F', idx: 3 },
-    { note: 'Gb', idx: 3.5 },
+    //{ note: 'Gb', idx: 3.5 },
     { note: 'G', idx: 4 },
-    { note: 'Ab', idx: 4.5 },
+    //{ note: 'Ab', idx: 4.5 }
     { note: 'A', idx: 5 },
-    { note: 'Bb', idx: 5.5 },
-    { note: 'B', idx: 6 },
+    //{ note: 'Bb', idx: 5.5 },
+    //{ note: 'B', idx: 6 },
   ]);
 
   const setOscillator = (newType: Tone.ToneOscillatorType) => {
@@ -128,22 +130,22 @@ function Saxophone({ synth, setSynth }: InstrumentProps): JSX.Element {
 
   const oscillators: List<OscillatorType> = List([
     'sine',
-    'sawtooth',
+    //'sawtooth',
     'square',
     'triangle',
     'fmsine',
-    'fmsawtooth',
+    //'fmsawtooth',
     'fmtriangle',
-    'amsine',
-    'amsawtooth',
-    'amtriangle',
+    //'amsine',
+    //'amsawtooth',
+    //'amtriangle',
   ]) as List<OscillatorType>;
 
   return (
     <div className="pv4">
       <div className="relative dib h4 w-100 ml4">
-          {/* image file goes here */}
-        {Range(2, 5).map(octave => //change this
+          {<img className="dcastrolopez" src="https://as2.ftcdn.net/v2/jpg/01/15/20/63/1000_F_115206312_RqCDc4PxXAJ5mCaJOVxOfOcnMKeBPFph.jpg" alt="a trumpet"></img>}
+        {Range(3, 4).map(octave => //change this. this is where we say how many sets of keys to print out
           keys.map(key => {
             //const isMinor = key.note.indexOf('b') !== -1;
             const note = `${key.note}${octave}`;
@@ -174,4 +176,4 @@ function Saxophone({ synth, setSynth }: InstrumentProps): JSX.Element {
   );
 }
 
-export const dcastrolopez = new Instrument('dcastrolopez', Saxophone);
+export const LonnieC11 = new Instrument('LonnieC11', Saxophone);
