@@ -37,18 +37,7 @@ export function FluteKey({
       <div
         onMouseDown={() => synth?.triggerAttack(`${note}`)} // Question: what is `onMouseDown`?
         onMouseUp={() => synth?.triggerRelease('+0.25')} // Question: what is `onMouseUp`?
-        className={classNames('ba pointer absolute dim', {
-          'bg-black black h3': minor, // minor keys are black
-          'black bg-white h4': !minor, // major keys are white
-        })}
-        style={{
-          // CSS
-          top: 0,
-          left: `${index * 2}rem`,
-          zIndex: minor ? 1 : 0,
-          width: minor ? '1.5rem' : '2rem',
-          marginLeft: minor ? '0.25rem' : 0,
-        }}
+        className={classNames("dot")}
       ></div>
     );
 }
