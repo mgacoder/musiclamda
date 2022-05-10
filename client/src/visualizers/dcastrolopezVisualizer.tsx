@@ -23,7 +23,7 @@ export const dcastrolopezVisualizer = new Visualizer(
     p5.fill(208, 78, 47, 255);        // Turquoise Fill 
     // p5.noFill();
     
-    p5.translate(width/2, height/2);   // translates image to center of screen 
+    p5.translate(width/200, height/10);   // translates image to center of screen 
 
     const values = analyzer.getValue(); 
    
