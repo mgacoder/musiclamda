@@ -13,7 +13,6 @@ export const dcastrolopezVisualizer = new Visualizer(
     const height = window.innerHeight / 2;
     const dim = Math.min(width, height); 
     
-    // Mdavichick
     // p5.background(147,112,219, 255); // Purple Background
     p5.background(170, 51, 106,255); // Pink Background
     // p5.strokeWeight(dim * 0.01);    // Normal Small Stroke
@@ -83,54 +82,6 @@ export const dcastrolopezVisualizer = new Visualizer(
     }
     p5.endShape();
 
-  // Left Line
-//    p5.beginShape();
-//     for (let i = 0; i < values.length; i++) {
-//       // Sample Wave Form
-//       const amplitude = values[i] as number;
-   
-//       const x = p5.map(i, 0, values.length - 1, 0, width/4);
-//       const y = height / 2 + amplitude * height;
-     
-//       p5.vertex(x-(width/2),y-(height/2));
-      
-//     }
-//     p5.endShape();
-
-    // Right Line
-    // p5.beginShape();
-    // for (let i = 0; i < values.length; i++) {
-    //   // Sample Wave Form
-    //   const amplitude = values[i] as number;
-    
-    //   const x = p5.map(i, 0, values.length - 1, (width/4) * 3, width);
-    //   const y = height / 2 + amplitude * height;
-      
-    //   p5.vertex(x-(width/2),y-(height/2));
-      
-    // }
-    // p5.endShape();
-
   },
-//     const width = window.innerWidth;
-//     const height = window.innerHeight / 2;
-//     const dim = Math.min(width, height);
 
-//     p5.background(47, 177, 208, 5);
-
-//     p5.strokeWeight(dim * 0.01);
-//     p5.stroke(208, 78, 47, 255);
-//     p5.noFill();
-
-//     const values = analyzer.getValue();
-//     p5.beginShape();
-//     for (let i = 0; i < values.length; i++) {
-//       const amplitude = values[i] as number;
-//       const x = p5.map(i, 0, values.length - 1, 0, width);
-//       const y = height / 2 + amplitude * height;
-//       // Place vertex
-//       p5.vertex(x, y);
-//     }
-//     p5.endShape();
-//   },
 );
