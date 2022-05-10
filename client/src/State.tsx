@@ -15,7 +15,7 @@ import { ThereminInstrument } from './instruments/JulieGunset';
 import { ChaosVisualizer } from './visualizers/JulieGunset';
 
 import { FluteWaveV } from './visualizers/Zellineous-FluteWave';
-import { FluteInstrument } from "./instruments/ZellineousFlute";
+import { FluteInstrument } from "./instruments/Zellineous-Flute";
 
 
 /** ------------------------------------------------------------------------ **

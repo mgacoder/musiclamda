@@ -125,4 +125,4 @@ return (
     </div>
 );
 }
-export const FluteInstrument = new Instrument('Flute', Flute);
+export const FluteInstrument = new Instrument('Zellineous-Flute', Flute);

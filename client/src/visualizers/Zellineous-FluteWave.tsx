@@ -36,4 +36,4 @@ function Flute(p5: P5, analyzer: Tone.Analyser) {
   p5.endShape();
 }
 
-export const FluteWaveV = new Visualizer('Flutewave', Flute);
+export const FluteWaveV = new Visualizer('Zellineous-Flutewave', Flute);
