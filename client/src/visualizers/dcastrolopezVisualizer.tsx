@@ -7,12 +7,13 @@ import { Visualizer } from '../Visualizers';
 
 
 export const dcastrolopezVisualizer = new Visualizer(
-  'dcastrolopez',
+  'LonnieC11-Visualizer',
   (p5: P5, analyzer: Tone.Analyser) => {
     const width = window.innerWidth;
     const height = window.innerHeight / 2;
     const dim = Math.min(width, height); 
     
+
     // p5.background(147,112,219, 255); // Purple Background
     p5.background(170, 51, 106,255); // Pink Background
     // p5.strokeWeight(dim * 0.01);    // Normal Small Stroke
@@ -43,7 +44,7 @@ export const dcastrolopezVisualizer = new Visualizer(
         p5.beginShape();
         for (let i = 0; i < values.length; i++) {
            index = p5.floor(p5.map(i, 0 , 180, 0, width));
-           r = p5.map(values[index] as number * 20, -1,1,100,350); // multiplying allows for
+           r = p5.map(values[index] as number * 20, -1,1,200,350); // multiplying allows for
       
            x = r * Math.sin(i);
            y = r * Math.cos(i);
